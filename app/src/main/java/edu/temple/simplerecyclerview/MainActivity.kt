@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = GridLayoutManager(this, 4)
 
         // TODO (Step 2: Define lambda to modify displayTextView size)
-
+//        fun modifyText = {}
         // Todo (Step 3: Pass lambda to adapter)
         recyclerView.adapter = NumberDisplayAdapter(numbers)
 

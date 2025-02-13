@@ -15,7 +15,6 @@ class NumberDisplayAdapter (private val numbers: Array<Int>) : RecyclerView.Adap
     inner class NumberViewHolder (layout: View) : RecyclerView.ViewHolder (layout) {
         // enumerate views inside layout
         val textView = layout.findViewById<TextView>(R.id.textView)
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NumberViewHolder {
