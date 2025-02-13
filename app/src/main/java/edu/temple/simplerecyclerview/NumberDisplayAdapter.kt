@@ -11,7 +11,7 @@ class NumberDisplayAdapter (private val numbers: Array<Int>, private val modifyS
     inner class NumberViewHolder (layout: View) : RecyclerView.ViewHolder (layout) {
         // enumerate views inside layout
         val textView = layout.findViewById<TextView>(R.id.textView).apply{
-            this.setOnClickListener {modifySize(numbers[adapterPosition].toFloat())}
+            this.setOnClickListener {modifySize(numbers[getAdapterPosition()].toFloat())}
         }
     }
 
